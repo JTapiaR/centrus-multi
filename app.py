@@ -9,6 +9,10 @@
 import os, asyncio, datetime as dt, urllib.parse, requests, pandas as pd
 import streamlit as st
 from pathlib import Path
+import pysqlite3               # ← wheel con SQLite ≥3.43
+import sys
+sys.modules["sqlite3"] = pysqlite3        # alias global
+sys.modules["pysqlite3"] = pysqlite3      # (por si acaso)
 from dotenv import load_dotenv
 
 load_dotenv()

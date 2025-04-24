@@ -18,6 +18,9 @@ feedparser>=6.0
 tenacity>=8.2
 newspaper3k>=0.2.8
 playwright>=1.44
+# otras librerías …
+pysqlite3-binary~=0.5.2      #  ← inyecta SQLite 3.43
+chromadb                     # o langchain-chroma si lo necesitas
 beautifulsoup4>=4.12
 pytesseract 
 
